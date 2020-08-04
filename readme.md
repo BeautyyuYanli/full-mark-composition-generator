@@ -24,7 +24,7 @@
 
 ## 体验网址
 
-[一键生成满分作文！]()
+[一键生成满分作文！](http://beautyyu.top/full-mark-composition-generator/index.html)
 
 ## Todo
 
