@@ -1,10 +1,22 @@
 #main{
     width: 80%;
     margin: auto;
+    margin-bottom: 100px;
 }
 input{
     margin: 7px;
 }
 .cele_words{
     width: 100%;
+}
+h1{
+    text-align: center;
+}
+.italic{
+    font-style: italic;
+    text-align: center;
+    margin: 3px;
+}
+body>p{
+    text-align: center;
 }

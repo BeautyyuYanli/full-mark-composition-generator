@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh">
     <head>
-        <title></title>
+        <title>满分作文生成器！</title>
+        <link rel="icon" href="icon.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="index.css" rel="stylesheet">
@@ -11,13 +12,18 @@
         <script src="main.js"></script>
         <script src="schemes/computer-science.js"></script>
         <script src="schemes/buddhism.js"></script>
+        <h1>满分作文生成器！</h1>
+        <p class="italic">我很可爱，请给我<a href="https://github.com/BeautyYuYanli/full-mark-composition-generator">点star!</a></p>
+        <p class="italic">来补充<a href="https://github.com/BeautyYuYanli/full-mark-composition-generator">更多预设方案</a></p>
+        <p>将专业术语和名人名言以随机报菜名的方式填入模板，生成一篇只有聪明人才能看懂的满分作文！</p>
         <div id="main">
+            <p>你可以选用预设方案:</p>
             <button onclick="set_scheme(scheme_computer_science)">预设方案:计算机科学</button>
             <button onclick="set_scheme(scheme_buddhism)">预设方案:佛教</button>
-            
-            <br>
-            学科<input class="subj"><input class="subj"><input class="subj"><br>
-            结构<input class="stru">
+            <p>或自行填入元素:</p>
+            主要学科<input class="subj">
+            两个相关联的学科<input class="subj"><input class="subj"><br>
+            生活在(一种结构)<input class="stru">上
             <div id="cele">
                 名人<input class="cele_name">名言
                 <input class="cele_words">
@@ -38,10 +44,11 @@
                 名人<input class="cele_name">名言
                 <input class="cele_words">
             </div>
-            思想:<input class="prin">主义,<input class="prin">主义,<input class="prin">主义<br>
-            性质:<input class="prop">性,<input class="prop">性,<input class="prop">性<br>
-            概念:<input class="conc"><input class="conc"><input class="conc"><input class="conc"><input class="conc"><input class="conc"><br>
+            3种思想(主义):<input class="prin">主义,<input class="prin">主义,<input class="prin">主义<br>
+            3个性质:<input class="prop">性,<input class="prop">性,<input class="prop">性<br>
+            6个专业概念或术语:<input class="conc"><input class="conc"><input class="conc"><input class="conc"><input class="conc"><input class="conc"><br>
             <button onclick="print()" style="font-size: 25px;">生成满分作文!</button>
+            <button onclick="copy_paste()">复制到剪贴板(实验性)</button>
             <p id='output'></p>
             <script>print()</script>
         </div>

@@ -28,12 +28,15 @@
 
 ## Todo
 
-- 更完善的自定义功能
 - 更丰富的预设方案
+- 一键复制(目前在Android平台不可用)
+- 混沌预设模式
 
 ## Contribution
 
 请参照`schemes/computer-science.js`的格式，在`schemes`文件夹中创建更多预设方案!
+
+新创建的预设方案，请在`index.html`中引用相应js文件并添加相应按钮
 
 ## 其它
 
