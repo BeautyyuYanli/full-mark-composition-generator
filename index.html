@@ -10,13 +10,40 @@
     <body>
         <script src="main.js"></script>
         <script src="schemes/computer-science.js"></script>
+        <script src="schemes/buddhism.js"></script>
         <div id="main">
-            <input class="input">
+            <button onclick="set_scheme(scheme_computer_science)">预设方案:计算机科学</button>
+            <button onclick="set_scheme(scheme_buddhism)">预设方案:佛教</button>
+            
+            <br>
+            学科<input class="subj"><input class="subj"><input class="subj"><br>
+            结构<input class="stru">
+            <div id="cele">
+                名人<input class="cele_name">名言
+                <input class="cele_words">
+                名人<input class="cele_name">名言
+                <input class="cele_words">
+                名人<input class="cele_name">名言
+                <input class="cele_words">
+                名人<input class="cele_name">名言
+                <input class="cele_words">
+                名人<input class="cele_name">名言
+                <input class="cele_words">
+                名人<input class="cele_name">名言
+                <input class="cele_words">
+                名人<input class="cele_name">名言
+                <input class="cele_words">
+                名人<input class="cele_name">名言
+                <input class="cele_words">
+                名人<input class="cele_name">名言
+                <input class="cele_words">
+            </div>
+            思想:<input class="prin">主义,<input class="prin">主义,<input class="prin">主义<br>
+            性质:<input class="prop">性,<input class="prop">性,<input class="prop">性<br>
+            概念:<input class="conc"><input class="conc"><input class="conc"><input class="conc"><input class="conc"><input class="conc"><br>
+            <button onclick="print()" style="font-size: 25px;">生成满分作文!</button>
             <p id='output'></p>
+            <script>print()</script>
         </div>
-        <script>
-            print();
-            $('#output').html(output.replace(/\n/g, "<br />"));
-        </script>
     </body>
 </html>

@@ -34,3 +34,7 @@
 ## Contribution
 
 请参照`schemes/computer-science.js`的格式，在`schemes`文件夹中创建更多预设方案!
+
+## 其它
+
+我很可愛，请给我点star！

@@ -2,6 +2,9 @@
     width: 80%;
     margin: auto;
 }
-.input{
+input{
+    margin: 7px;
+}
+.cele_words{
     width: 100%;
 }
