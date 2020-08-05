@@ -20,7 +20,7 @@ scheme_computer_science = {
     //至少3个有关第一个学科的性质
     prop: ['有限', '离散', '无后效'],
     //至少6个有关第一个学科的概念
-    conc: ['N=NP猜想', 'AC自动机', '轮廓动态规划', '模拟退火', '哈密顿通路的证明', '最大流最小割定理'],
+    conc: ['P=NP猜想', 'AC自动机', '轮廓动态规划', '模拟退火', '哈密顿通路的证明', '最大流最小割定理'],
     init: function (){
         shuffle(this.stru);
         shuffle(this.cele);
