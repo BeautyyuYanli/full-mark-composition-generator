@@ -34,9 +34,9 @@
 
 ## Contribution
 
-请参照`schemes/computer-science.js`的格式，在`schemes`文件夹中创建更多预设方案!
+请参照`schemes/computer_science.js`的格式，在`schemes`文件夹中创建更多预设方案!
 
-新创建的预设方案，请在`index.html`中引用相应js文件并添加相应按钮
+新创建的预设方案，请在`main.js`的第一行`scheme_list`中添加相应的名称
 
 ## 其它
 

@@ -1,3 +1,15 @@
+var schemes = {}, scheme_list = ['computer_science', 'buddhism', 'physics', 'biology'];
+for (let i = 0; i < scheme_list.length; ++ i){
+    $.getScript('/schemes/' + scheme_list[i] + '.js', function () {
+        $(document).ready(function () {
+            let tmp = '<button onclick="set_scheme(schemes.name_en)" style="margin: 5px 7px 5px 7px;" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-300 mdui-col-md-2">name_cn</button>';
+            tmp = tmp.replace('name_en', scheme_list[i]);
+            tmp = tmp.replace('name_cn', schemes[scheme_list[i]].subj[0]);
+            $('.buttons').append(tmp);
+        });
+    });
+}
+
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -61,7 +73,7 @@ function print(chosen_scheme = tmp_scheme){
     $('#output').html(output.replace(/\n/g, "<br />"));
 }
 
-function set_scheme(scheme = scheme_computer_science){
+function set_scheme(scheme = schemes.computer_science){
     scheme.init();
     $(".stru")[0].value = scheme.stru[0];
     for (let i = 0; i < 3;++ i){

@@ -13,12 +13,6 @@
 </head>
 
 <body class="mdui-theme-layout-dark">
-  <script src="main.js"></script>
-  <script src="schemes/computer-science.js"></script>
-  <script src="schemes/buddhism.js"></script>
-  <script src="schemes/physics.js"></script>
-  <script src="schemes/biology.js"></script>
-
   <div class="mdui-appbar">
     <div class="mdui-toolbar mdui-color-grey-300">
       <a href="javascript:;" class="mdui-typo-title">满分作文生成器！</a>
@@ -47,17 +41,8 @@
       style="font-size: 40px;">”</b></p>
 
   <div class="mdui-col-md-12">
-    <div class="schemes mdui-col-md-10 mdui-col-offset-md-1">
-
+    <div class="schemes mdui-col-md-10 mdui-col-offset-md-1 buttons">
       <h3 class="mdui-typo">选用预设方案：</h3>
-      <button onclick="set_scheme(scheme_computer_science)" style="margin: 0 7px 0 7px;"
-        class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-300 mdui-col-md-2">计算机科学</button>
-      <button onclick="set_scheme(scheme_buddhism)" style="margin: 0 7px 0 7px;"
-        class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-300 mdui-col-md-2">佛教</button>
-      <button onclick="set_scheme(scheme_physics)" style="margin: 0 7px 0 7px;"
-        class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-300 mdui-col-md-2">物理</button>
-      <button onclick="set_scheme(scheme_biology)" style="margin: 0 7px 0 7px;"
-        class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-300 mdui-col-md-2">生物</button>
     </div>
   </div>
 
@@ -170,11 +155,13 @@
         <div class="mdui-card-actions">
           <button onclick="copy_paste()" class="mdui-btn mdui-ripple">复制到剪贴板</button>
         </div>
-        <div id="output" class="mdui-card-content" style="font-family: serif;font-size: 18px;line-height: 25px;"></div>
+        <div id="output" class="mdui-card-content" style="font-family: serif;font-size: 18px;line-height: 25px;">
+          圆您作文满分梦！
+        </div>
       </div>
     </div>
   </div>
-  <script>print()</script>
+  <script src="main.js"></script>
 </body>
 
 </html>
