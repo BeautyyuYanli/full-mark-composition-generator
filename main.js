@@ -1,6 +1,6 @@
 var schemes = {}, scheme_list = ['computer_science', 'buddhism', 'physics', 'biology'];
 for (let i = 0; i < scheme_list.length; ++ i){
-    $.getScript('/schemes/' + scheme_list[i] + '.js', function () {
+    $.getScript('schemes/' + scheme_list[i] + '.js', function () {
         $(document).ready(function () {
             let tmp = '<button onclick="set_scheme(schemes.name_en)" style="margin: 5px 7px 5px 7px;" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-300 mdui-col-md-2">name_cn</button>';
             tmp = tmp.replace('name_en', scheme_list[i]);
