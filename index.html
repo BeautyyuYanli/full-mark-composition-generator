@@ -6,51 +6,121 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="index.css" rel="stylesheet">
+        <link href="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.0/css/mdui.min.css" rel="stylesheet">
+        <script src="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.0/js/mdui.min.js"></script>
         <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
     </head>
     <body>
         <script src="main.js"></script>
         <script src="schemes/computer-science.js"></script>
         <script src="schemes/buddhism.js"></script>
-        <h1>满分作文生成器！</h1>
-        <p class="italic">我很可爱，请给我<a href="https://github.com/BeautyYuYanli/full-mark-composition-generator">点star!</a></p>
-        <p class="italic">来补充<a href="https://github.com/BeautyYuYanli/full-mark-composition-generator">更多预设方案</a></p>
-        <p>将专业术语和名人名言以随机报菜名的方式填入模板，生成一篇只有聪明人才能看懂的满分作文！</p>
-        <div id="main">
-            <p>你可以选用预设方案:</p>
-            <button onclick="set_scheme(scheme_computer_science)">预设方案:计算机科学</button>
-            <button onclick="set_scheme(scheme_buddhism)">预设方案:佛教</button>
-            <p>或自行填入元素:</p>
-            主要学科<input class="subj">
-            两个相关联的学科<input class="subj"><input class="subj"><br>
-            生活在(一种结构)<input class="stru">上
-            <div id="cele">
-                名人<input class="cele_name">名言
-                <input class="cele_words">
-                名人<input class="cele_name">名言
-                <input class="cele_words">
-                名人<input class="cele_name">名言
-                <input class="cele_words">
-                名人<input class="cele_name">名言
-                <input class="cele_words">
-                名人<input class="cele_name">名言
-                <input class="cele_words">
-                名人<input class="cele_name">名言
-                <input class="cele_words">
-                名人<input class="cele_name">名言
-                <input class="cele_words">
-                名人<input class="cele_name">名言
-                <input class="cele_words">
-                名人<input class="cele_name">名言
-                <input class="cele_words">
+
+        <div class="mdui-appbar">
+            <div class="mdui-toolbar mdui-color-grey-300">
+              <a href="javascript:;" class="mdui-typo-title">满分作文生成器！</a>
+              <div class="mdui-toolbar-spacer"></div>
+              <a mdui-dialog="{target: '#about'}" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">error_outline</i></a>
             </div>
-            3种思想(主义):<input class="prin">主义,<input class="prin">主义,<input class="prin">主义<br>
-            3个性质:<input class="prop">性,<input class="prop">性,<input class="prop">性<br>
-            6个专业概念或术语:<input class="conc"><input class="conc"><input class="conc"><input class="conc"><input class="conc"><input class="conc"><br>
-            <button onclick="print()" style="font-size: 25px;">生成满分作文!</button>
-            <button onclick="copy_paste()">复制到剪贴板(实验性)</button>
+          </div>
+
+          <div class="mdui-dialog" id="about">
+            <div class="mdui-dialog-title">关于</div>
+            <div class="mdui-dialog-content">原作：<a href="https://github.com/BeautyYuYanli/full-mark-composition-generator">https://github.com/BeautyYuYanli/full-mark-composition-generator</a><br><br><li>前端优化版</li></div>
+            <div class="mdui-dialog-actions">
+              <button class="mdui-btn mdui-ripple" mdui-dialog-close>好的</button>
+            </div>
+          </div>
+
+        <p style="padding-bottom: 2.5%;padding-top: 2.5%;"><b style="font-size: 40px;">“ </b><b style="font-size: 20px;">将专业术语和名人名言以随机报菜名的方式填入模板，生成一篇只有聪明人才能看懂的满分作文！</b><b style="font-size: 40px;">”</b></p>
+        
+<div class="mdui-col-md-12">
+    <div class=" mdui-col-md-10 mdui-col-offset-md-1" style="padding-bottom: 30px;">
+        <div class="mdui-panel" mdui-panel>
+            <div class="mdui-panel-item">
+              <div class="mdui-panel-item-header">
+                <div class="mdui-panel-item-title">可以选用的预设方案</div>
+                <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+              </div>
+              <div class="mdui-panel-item-body">
+              <div class="mdui-row-6">
+                <button onclick="set_scheme(scheme_computer_science)" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-300 mdui-col-md-2" style="margin-right: 20px;">计算机科学</button>
+                <button onclick="set_scheme(scheme_buddhism)" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-300 mdui-col-md-2">佛教</button>
+              </div>
+               <div class="mdui-panel-item-actions">
+                  <button class="mdui-btn mdui-ripple" mdui-panel-item-close>关闭</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+        
+        <div class="mdui-col-md-12">
+            <div class="mdui-col-md-10 mdui-col-offset-md-1">
+
+        <h3 class="mdui-typo">或 自行填入元素：</h3>
+           <div class="mdui-textfield"><h4>主要学科：</h4><input class="mdui-textfield-input subj" placeholder="在这里填入主要学科"/></div>
+
+            <h4>两个相关联的学科：</h4>
+            <div class="mdui-textfield"><input class="mdui-textfield-input subj" placeholder="关联学科1"></div>
+            <div class="mdui-textfield"><input class="mdui-textfield-input subj" placeholder="关联学科2"></div><br>
+
+
+            <b>题目：生活在(一种结构)上：</b>
+            
+            <div class="mdui-textfield"><input class="mdui-textfield-input stru" placeholder="作文题目：生活在XX上"></div>
+
+            <div id="cele">
+
+                
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">account_circle</i><label class="mdui-textfield-label">名人</label><input class="mdui-textfield-input cele_name"/></div>
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">message</i><label class="mdui-textfield-label">名言</label><input class="mdui-textfield-input cele_words"/></div> 
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">account_circle</i><label class="mdui-textfield-label">名人</label><input class="mdui-textfield-input cele_name"/></div>
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">message</i><label class="mdui-textfield-label">名言</label><input class="mdui-textfield-input cele_words"/></div>  
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">account_circle</i><label class="mdui-textfield-label">名人</label><input class="mdui-textfield-input cele_name"/></div>
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">message</i><label class="mdui-textfield-label">名言</label><input class="mdui-textfield-input cele_words"/></div>  
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">account_circle</i><label class="mdui-textfield-label">名人</label><input class="mdui-textfield-input cele_name"/></div>
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">message</i><label class="mdui-textfield-label">名言</label><input class="mdui-textfield-input cele_words"/></div>  
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">account_circle</i><label class="mdui-textfield-label">名人</label><input class="mdui-textfield-input cele_name"/></div>
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">message</i><label class="mdui-textfield-label">名言</label><input class="mdui-textfield-input cele_words"/></div>  
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">account_circle</i><label class="mdui-textfield-label">名人</label><input class="mdui-textfield-input cele_name"/></div>
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">message</i><label class="mdui-textfield-label">名言</label><input class="mdui-textfield-input cele_words"/></div>  
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">account_circle</i><label class="mdui-textfield-label">名人</label><input class="mdui-textfield-input cele_name"/></div>
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">message</i><label class="mdui-textfield-label">名言</label><input class="mdui-textfield-input cele_words"/></div>  
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">account_circle</i><label class="mdui-textfield-label">名人</label><input class="mdui-textfield-input cele_name"/></div>
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">message</i><label class="mdui-textfield-label">名言</label><input class="mdui-textfield-input cele_words"/></div>  
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">account_circle</i><label class="mdui-textfield-label">名人</label><input class="mdui-textfield-input cele_name"/></div>
+                <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">message</i><label class="mdui-textfield-label">名言</label><input class="mdui-textfield-input cele_words"/></div>  
+
+            </div>
+
+            <h4 style="margin-top: 60%;">3种思想(主义)：</h4>
+                <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prin" placeholder="填写主义名，无需带上“主义”这两个字"></div>
+                <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prin" placeholder="填写主义名，无需带上“主义”这两个字"></div>
+                <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prin" placeholder="填写主义名，无需带上“主义”这两个字"></div><br>
+
+            <h4 style="margin-top: 5%;">3个性质（如：延展性）：</h4>
+                <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prop" placeholder="填写性质名，无需带上“性”这个字"></div>
+                <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prop" placeholder="填写性质名，无需带上“性”这个字"></div>
+                <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prop" placeholder="填写性质名，无需带上“性”这个字"></div><br>
+
+            <h4 style="margin-top: 5%;">6个专业概念或术语：</h4>
+                <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input conc" placeholder="填写概念/术语名"></div>
+                <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input conc" placeholder="填写概念/术语名"></div>
+                <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input conc" placeholder="填写概念/术语名"></div>
+                <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input conc" placeholder="填写概念/术语名"></div>
+                <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input conc" placeholder="填写概念/术语名"></div>
+                <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input conc" placeholder="填写概念/术语名"></div><br>
+            
+            <div style="margin-top: 10%;">
+                <button onclick="print()" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent mdui-color-grey-300">生成满分作文!</button>
+                <button onclick="copy_paste()" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent mdui-color-grey-300">复制到剪贴板(实验性)</button>
+            </div>
             <p id='output'></p>
             <script>print()</script>
         </div>
+    </div>
     </body>
 </html>
