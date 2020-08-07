@@ -89,32 +89,6 @@ function set_scheme(scheme = schemes.computer_science){
         $(".conc")[i].value = scheme.conc[i];
 }
 
-function copy_paste() {
-    copyToClipboard($("#output").html().split("<br>").join("\n"));
-    alert("满分作文已复制到剪贴板!");
-}
-
-function copyToClipboard(text) {
-    if (window.clipboardData && window.clipboardData.setData) {
-        // Internet Explorer-specific code path to prevent textarea being shown while dialog is visible.
-        return clipboardData.setData("Text", text);
-
-    }
-    else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
-        var textarea = document.createElement("textarea");
-        textarea.textContent = text;
-        textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in Microsoft Edge.
-        document.body.appendChild(textarea);
-        textarea.select();
-        try {
-            return document.execCommand("copy");  // Security exception may be thrown by some browsers.
-        }
-        catch (ex) {
-            console.warn("Copy to clipboard failed.", ex);
-            return false;
-        }
-        finally {
-            document.body.removeChild(textarea);
-        }
-    }
-}
+$().ready(function() {
+    new ClipboardJS('#copy');
+})
