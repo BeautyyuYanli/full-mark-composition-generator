@@ -91,5 +91,4 @@ function set_scheme(scheme = schemes.computer_science){
 
 $().ready(function() {
     new ClipboardJS('#copy');
-    alert('已将满分作文复制到剪贴板！')
 })
