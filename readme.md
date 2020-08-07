@@ -19,11 +19,14 @@
 
 新创建的预设方案，请在`main.js`的第一行`scheme_list`中添加相应的名称
 
-## 其它
+## Contributors
 
-我很可爱，请给我点star！
-
-欢迎关注[我的Telegram Channel](https://t.me/water_water_water_2077)
+- [beautyyu](https://github.com/BeautyYuYanli): 我很可爱，请给我点star！欢迎关注[我的Telegram Channel](https://t.me/water_water_water_2077)
+- [mochaaP](https://github.com/mochaaP)
+- [haoruilee](https://github.com/haoruilee)
+- [Estrellas-NoloAnai-Ding](https://github.com/Estrellas-NoloAnai-Ding)
+- [Cluckbird](https://github.com/Cluckbird)
+- (广告位招租...)
 
 ## meme来源
 
