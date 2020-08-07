@@ -4,6 +4,9 @@ h1{
 body>p{
     text-align: center;
 }
+a{
+    color: #ffa948bf;
+}
 .italic{
     font-style: italic;
     text-align: center;
