@@ -17,7 +17,7 @@
 
 请参照`schemes/computer_science.js`的格式，在`schemes`文件夹中创建更多预设方案!
 
-新创建的预设方案，请在`main.js`的第一行`scheme_list`中添加相应的名称
+**新创建的预设方案，请在`main.js`的第一行`scheme_list`中添加相应的名称**
 
 ## Contributors
 
