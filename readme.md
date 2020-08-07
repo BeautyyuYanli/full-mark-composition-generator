@@ -26,6 +26,7 @@
 - [haoruilee](https://github.com/haoruilee)
 - [Estrellas-NoloAnai-Ding](https://github.com/Estrellas-NoloAnai-Ding)
 - [Cluckbird](https://github.com/Cluckbird)
+- [RimoChan](https://github.com/RimoChan): 那我偷偷在这里放个[Librian - 简明强大的Galgame引擎](https://github.com/RimoChan/Librian)的广告……
 - (广告位招租...)
 
 ## meme来源
