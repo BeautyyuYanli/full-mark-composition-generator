@@ -9,3 +9,7 @@ body>p{
     text-align: center;
     margin: 3px;
 }
+#output {
+    -webkit-user-select: all; /* for Safari */
+    user-select: all;
+}
