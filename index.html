@@ -10,6 +10,7 @@
   <link href="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.0/css/mdui.min.css" rel="stylesheet">
   <script src="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.0/js/mdui.min.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 </head>
 
 <body class="mdui-theme-layout-dark">
@@ -153,7 +154,7 @@
       <br>
       <div class="mdui-card" style="margin-top: 20px;">
         <div class="mdui-card-actions">
-          <button onclick="copy_paste()" class="mdui-btn mdui-ripple">复制到剪贴板</button>
+          <button id="copy" data-clipboard-target="#output" class="mdui-btn mdui-ripple">复制到剪贴板</button>
         </div>
         <div id="output" class="mdui-card-content" style="font-family: serif;font-size: 18px;line-height: 25px;">
           圆您作文满分梦！
