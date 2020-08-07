@@ -87,6 +87,7 @@ function set_scheme(scheme = schemes.computer_science){
     }
     for (let i = 0; i < 6;++ i)
         $(".conc")[i].value = scheme.conc[i];
+    print();
 }
 
 $().ready(function() {
