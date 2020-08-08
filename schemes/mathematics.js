@@ -1,4 +1,4 @@
-schemes['computer_science'] = {
+schemes['mathematics'] = {
     //三个学科 其中第一个是主学科 后两个是相关学科
     subj: ['数学', '物理学', '计算机科学'],
     //至少1个有关第一个学科的 字面上可以解释为物理结构的词
