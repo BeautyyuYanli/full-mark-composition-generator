@@ -25,8 +25,8 @@
 
   <div class="mdui-dialog" id="about">
     <div class="mdui-dialog-title">关于</div>
-    <div class="mdui-dialog-content">Github：<a
-        href="https://github.com/BeautyYuYanli/full-mark-composition-generator">https://github.com/BeautyYuYanli/full-mark-composition-generator</a><br><br>
+    <div class="mdui-dialog-content">Github仓库：<a
+        href="https://github.com/BeautyYuYanli/full-mark-composition-generator">https://github.com/BeautyYuYanli/full-mark-composition-generator</a><br/><br/>
     </div>
     <div class="mdui-dialog-actions">
       <button class="mdui-btn mdui-ripple" mdui-dialog-close>好的</button>
@@ -53,7 +53,7 @@
       <div class="mdui-panel" mdui-panel>
         <div class="mdui-panel-item">
           <div class="mdui-panel-item-header">
-            <div class="mdui-panel-item-title">更多编辑</div>
+            <div class="mdui-panel-item-title">详细编辑</div>
             <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
           </div>
           <div class="mdui-panel-item-body">
@@ -64,10 +64,10 @@
 
             <h4 style="margin-bottom: 0px;">两个相关联的学科：</h4>
             <div class="mdui-textfield"><input class="mdui-textfield-input subj" placeholder="关联学科1"></div>
-            <div class="mdui-textfield"><input class="mdui-textfield-input subj" placeholder="关联学科2"></div><br>
+            <div class="mdui-textfield"><input class="mdui-textfield-input subj" placeholder="关联学科2"></div><br/>
 
-            <h4 style="margin-bottom: 0px;">题目：生活在(一种结构)上：</h4>
-            <div class="mdui-textfield"><input class="mdui-textfield-input stru" placeholder="作文题目：生活在XX上"></div>
+            <h4 style="margin-bottom: 0px;">标题：生活在______(一种结构)上：</h4>
+            <div class="mdui-textfield"><input class="mdui-textfield-input stru" placeholder="一种结构"></div>
 
             <div id="cele">
               <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">account_circle</i><label
@@ -114,7 +114,7 @@
             <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prin"
                 placeholder="填写一种主义，无需带上“主义”这两个字"></div>
             <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prin"
-                placeholder="填写一种主义，无需带上“主义”这两个字"></div><br>
+                placeholder="填写一种主义，无需带上“主义”这两个字"></div><br/>
 
             <h4 style="padding-top: 40px;margin-bottom: 5px;">3个性质（如：延展性）：</h4>
             <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prop"
@@ -122,7 +122,7 @@
             <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prop"
                 placeholder="填写一种性质，无需带上“性”这个字"></div>
             <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prop"
-                placeholder="填写一种性质，无需带上“性”这个字"></div><br>
+                placeholder="填写一种性质，无需带上“性”这个字"></div><br/>
 
             <h4 style="padding-top: 40px;margin-bottom: 5px;">6个专业概念或术语：</h4>
             <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input conc" placeholder="填写概念/术语名">
@@ -136,9 +136,9 @@
             <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input conc" placeholder="填写概念/术语名">
             </div>
             <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input conc" placeholder="填写概念/术语名">
-            </div><br>
+            </div><br/>
             <div class="mdui-panel-item-actions" style="border-top: 0">
-              <button class="mdui-btn mdui-ripple" mdui-panel-item-close>关闭</button>
+              <button class="mdui-btn mdui-ripple" mdui-panel-item-close>缩小</button>
             </div>
           </div>
         </div>
@@ -149,9 +149,11 @@
 
   <div class="mdui-col-md-12" style="margin-top: 20px;">
     <div class="mdui-col-md-10 mdui-col-offset-md-1">
+      <center>
       <button onclick="print()" style="font-size: 35px; height: 60px;"
         class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent mdui-color-grey-300">生成满分作文!</button>
-      <br>
+      </center>
+      <br/>
       <div class="mdui-card" style="margin-top: 20px;">
         <div class="mdui-card-actions">
           <button id="copy" data-clipboard-target="#output" class="mdui-btn mdui-ripple">复制到剪贴板</button>
