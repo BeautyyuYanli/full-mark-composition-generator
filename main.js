@@ -1,4 +1,4 @@
-var schemes = {}, scheme_list = ['computer_science', 'buddhism', 'physics', 'biology', 'ha', 'linguistics', 'literature'];
+var schemes = {}, scheme_list = ['computer_science', 'buddhism', 'physics', 'biology', 'ha', 'linguistics', 'literature', 'winnie'];
 for (let i = 0; i < scheme_list.length; ++ i){
     $.getScript('schemes/' + scheme_list[i] + '.js', function () {
         $(document).ready(function () {
