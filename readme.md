@@ -22,11 +22,19 @@
 ## Contributors
 
 - [beautyyu](https://github.com/BeautyYuYanli): 我很可爱，请给我点star！欢迎关注[我的Telegram Channel](https://t.me/water_water_water_2077)
+
 - [mochaaP](https://github.com/mochaaP)
+
 - [haoruilee](https://github.com/haoruilee)
+
 - [Estrellas-NoloAnai-Ding](https://github.com/Estrellas-NoloAnai-Ding)
+
 - [Cluckbird](https://github.com/Cluckbird)
+
 - [RimoChan](https://github.com/RimoChan): 那我偷偷在这里放个[Librian - 简明强大的Galgame引擎](https://github.com/RimoChan/Librian)的广告……
+
+- [RingoTC](https://github.com/RingoTC)
+
 - (广告位招租...)
 
 ## meme来源
