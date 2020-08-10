@@ -1,5 +1,5 @@
-var schemes = {}, scheme_list = ['computer_science', 'buddhism', 'physics', 'biology', 'ha', 'linguistics', 'literature', 'mathematics'];
-for (let i = 0; i < scheme_list.length; ++ i){
+var schemes = {}, scheme_list = ['computer_science', 'buddhism', 'physics', 'biology', 'ha', 'linguistics', 'literature', 'mathematics', '入关'];
+for (let i = 0; i < scheme_list.length; ++i) {
     $.getScript('schemes/' + scheme_list[i] + '.js', function () {
         $(document).ready(function () {
             let tmp = '<button onclick="set_scheme(schemes.name_en)" style="margin: 5px 7px 5px 7px;" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-300 mdui-col-md-2">name_cn</button>';
@@ -45,7 +45,7 @@ var tmp_scheme = {
     prin: ['构造', '直觉', '逻辑'],
     prop: ['有限', '离散', '无后效'],
     conc: ['N=NP猜想', 'AC自动机', '轮廓动态规划', '模拟退火', '哈密顿通路的证明', '最大流最小割定理'],
-    init: function (){
+    init: function () {
         shuffle(this.stru);
         shuffle(this.cele);
         shuffle(this.prin);
@@ -54,24 +54,24 @@ var tmp_scheme = {
     }
 }
 
-function print(chosen_scheme = tmp_scheme){
+function print(chosen_scheme = tmp_scheme) {
     output = tmp.join('<br/><br/>');
 
     chosen_scheme.stru[0] = $(".stru")[0].value;
-    for (let i = 0; i < 3;++ i){
+    for (let i = 0; i < 3; ++i) {
         chosen_scheme.subj[i] = $(".subj")[i].value;
         chosen_scheme.prin[i] = $(".prin")[i].value;
         chosen_scheme.prop[i] = $(".prop")[i].value;
     }
-    for (let i = 0; i < 9;++ i){
+    for (let i = 0; i < 9; ++i) {
         chosen_scheme.cele[i][0] = $(".cele_name")[i].value;
         chosen_scheme.cele[i][1] = $(".cele_words")[i].value;
     }
-    for (let i = 0; i < 6;++ i)
+    for (let i = 0; i < 6; ++i)
         chosen_scheme.conc[i] = $(".conc")[i].value;
     chosen_scheme.init();
 
-    for (let i = 1; i <= 9; ++ i){
+    for (let i = 1; i <= 9; ++i) {
         this['学科' + i] = chosen_scheme.subj[i - 1];
         this['结构' + i] = chosen_scheme.stru[i - 1];
         this['人名' + i] = chosen_scheme.cele[i - 1][0];
@@ -83,23 +83,23 @@ function print(chosen_scheme = tmp_scheme){
     $('#output').html(eval('`' + output + '`'));
 }
 
-function set_scheme(scheme = schemes.computer_science){
+function set_scheme(scheme = schemes.computer_science) {
     scheme.init();
     $(".stru")[0].value = scheme.stru[0];
-    for (let i = 0; i < 3;++ i){
+    for (let i = 0; i < 3; ++i) {
         $(".subj")[i].value = scheme.subj[i];
         $(".prin")[i].value = scheme.prin[i];
         $(".prop")[i].value = scheme.prop[i];
     }
-    for (let i = 0; i < 9;++ i){
+    for (let i = 0; i < 9; ++i) {
         $(".cele_name")[i].value = scheme.cele[i][0];
         $(".cele_words")[i].value = scheme.cele[i][1];
     }
-    for (let i = 0; i < 6;++ i)
+    for (let i = 0; i < 6; ++i)
         $(".conc")[i].value = scheme.conc[i];
     print();
 }
 
-$().ready(function() {
+$().ready(function () {
     new ClipboardJS('#copy');
 })

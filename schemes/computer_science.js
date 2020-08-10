@@ -2,7 +2,7 @@ schemes['computer_science'] = {
     //三个学科 其中第一个是主学科 后两个是相关学科
     subj: ['计算机科学', '哲学', '数学'],
     //至少1个有关第一个学科的 字面上可以解释为物理结构的词
-    stru: ['二叉树', '红黑树', 'Fibonacci堆'],
+    stru: ['栈', '树', '二叉树', '红黑树', 'Fibonacci堆'],
     //至少9个有关第一个学科的名人名言
     cele: [
         ['Martin Fowler', 'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.'],
@@ -21,7 +21,7 @@ schemes['computer_science'] = {
     prop: ['有限', '离散', '无后效'],
     //至少6个有关第一个学科的概念
     conc: ['P=NP猜想', 'AC自动机', '轮廓动态规划', '模拟退火', '哈密顿通路的证明', '最大流最小割定理'],
-    init: function (){
+    init: function () {
         shuffle(this.stru);
         shuffle(this.cele);
         shuffle(this.prin);
