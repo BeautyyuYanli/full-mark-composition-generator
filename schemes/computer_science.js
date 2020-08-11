@@ -2,7 +2,7 @@ schemes['computer_science'] = {
     //三个学科 其中第一个是主学科 后两个是相关学科
     subj: ['计算机科学', '哲学', '数学'],
     //至少1个有关第一个学科的 字面上可以解释为物理结构的词
-    stru: ['栈', '树', '二叉树', '红黑树', 'Fibonacci堆'],
+    stru: ['栈', '树', '二叉树', '红黑树', 'Fibonacci堆', '仙人掌'],
     //至少9个有关第一个学科的名人名言
     cele: [
         ['Martin Fowler', 'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.'],
@@ -14,6 +14,11 @@ schemes['computer_science'] = {
         ['David Wheeler', 'Any problem in computer science can be solved with another layer of indirection. But that usually will create another problem.'],
         ['Neal Ford', 'Life is too short for malloc.'],
         ['Harold Abelson', 'Programs must be written for people to read, and only incidentally for machines to execute.'],
+        ['Linus Torvalds', 'Only wimps use tape backup: _real_ men just upload their important stuff on ftp, and let the rest of the world mirror it'],
+        ['Linus Torvalds', 'Software is like sex; it’s better when it’s free.'],
+        ['Linus Torvalds', 'Regression testing? What’s that? If it compiles, it is good; if it boots up, it is perfect.'],
+        ['Linus Torvalds', 'Standards are paper. I use paper to wipe my butt every day. That’s how much that paper is worth.'],
+        ['Linus Torvalds', 'Portability is for people who cannot write new programs.'],
     ],
     //至少3个有关第一个学科的思想（主义）
     prin: ['构造', '直觉', '逻辑'],
