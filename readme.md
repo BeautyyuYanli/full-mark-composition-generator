@@ -10,8 +10,7 @@
 
 ## Todo
 
-- 更丰富的预设方案
-- 混沌预设模式
+我也不知道todo还有啥. 总之欢迎大家发挥想象.
 
 ## Contribution
 
@@ -19,23 +18,13 @@
 
 **新创建的预设方案，请在`main.js`的第一行`scheme_list`中添加相应的名称**
 
-## Contributors
+## Contributors(广告区)
 
 - [beautyyu](https://github.com/BeautyYuYanli): 我很可爱，请给我点star！欢迎关注[我的Telegram Channel](https://t.me/water_water_water_2077)
 
-- [mochaaP](https://github.com/mochaaP)
-
-- [haoruilee](https://github.com/haoruilee)
-
-- [Estrellas-NoloAnai-Ding](https://github.com/Estrellas-NoloAnai-Ding)
-
-- [Cluckbird](https://github.com/Cluckbird)
-
 - [RimoChan](https://github.com/RimoChan): 那我偷偷在这里放个[Librian - 简明强大的Galgame引擎](https://github.com/RimoChan/Librian)的广告……
 
-- [RingoTC](https://github.com/RingoTC)
-
-- (广告位招租...)
+- (广告位招租...(自己发pr吧hhh))
 
 ## meme来源
 
