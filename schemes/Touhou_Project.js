@@ -1,4 +1,4 @@
-schemes['Touhou Project'] = {
+schemes['Touhou_Project'] = {
     //三个学科 其中第一个是主学科 后两个是相关学科
     subj: ['东方project', '上海アリス幻樂団', '黃昏边境'],
     //至少1个有关第一个学科的 字面上可以解释为物理结构的词
