@@ -1,4 +1,4 @@
-var schemes = {}, scheme_list = ['computer_science', 'buddhism', 'physics', 'biology', 'ha', 'linguistics', 'literature', 'mathematics', '入关', 'White_Album','Touhou_Project', 'music'];
+var schemes = {}, scheme_list = ['computer_science', 'buddhism', 'physics', 'biology', 'ha', 'linguistics', 'literature', 'mathematics', '入关', 'White_Album','Touhou_Project', 'music','liuxue'];
 for (let i = 0; i < scheme_list.length; ++i) {
     $.getScript('schemes/' + scheme_list[i] + '.js', function () {
         $(document).ready(function () {
