@@ -24,6 +24,8 @@
 
 - [RimoChan](https://github.com/RimoChan): 那我偷偷在这里放个[Librian - 简明强大的Galgame引擎](https://github.com/RimoChan/Librian)的广告……
 
+- [luosiwei-cmd](https://github.com/luosiwei-cmd/)：~~我也偷偷放一个基于 C++ 的 OI/ACM 等算法竞赛程序测试用例生成器 [CarYon](https://github.com/luosiwei-cmd/CarYon) 的广告~~
+
 - (广告位招租...(自己发pr吧hhh))
 
 ## meme来源
