@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+body>p{
+    text-align: center;
+}
+a{
+    color: #ffa948bf;
+}
+.italic{
+    font-style: italic;
+    text-align: center;
+    margin: 3px;
+}
+/* #output {
+    -webkit-user-select: all;
+    user-select: all;
+} */

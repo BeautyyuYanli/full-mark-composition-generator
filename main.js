@@ -1,9 +1,8 @@
-var schemes = {},
-    scheme_list = ['computer_science', 'buddhism', 'physics', 'biology', 'ha', 'linguistics', 'literature', 'mathematics', '入关', 'White_Album', 'Touhou_Project', 'music', 'liuxue', 'oi'];
+var schemes = {}, scheme_list = ['computer_science', 'buddhism', 'physics', 'biology', 'ha', 'linguistics', 'literature', 'mathematics', '入关', 'White_Album','Touhou_Project', 'music','liuxue','oi'];
 for (let i = 0; i < scheme_list.length; ++i) {
-    $.getScript('schemes/' + scheme_list[i] + '.js', function() {
-        $(document).ready(function() {
-            let tmp = '<button onclick="set_scheme(schemes.name_en)" class="mdui-btn mdui-ripple">name_cn</button>';
+    $.getScript('schemes/' + scheme_list[i] + '.js', function () {
+        $(document).ready(function () {
+            let tmp = '<button onclick="set_scheme(schemes.name_en)" style="margin: 5px 7px 5px 7px;" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-300 mdui-col-md-2">name_cn</button>';
             tmp = tmp.replace('name_en', scheme_list[i]);
             tmp = tmp.replace('name_cn', schemes[scheme_list[i]].subj[0]);
             $('.buttons').append(tmp);
@@ -46,7 +45,7 @@ var tmp_scheme = {
     prin: ['构造', '直觉', '逻辑'],
     prop: ['有限', '离散', '无后效'],
     conc: ['N=NP猜想', 'AC自动机', '轮廓动态规划', '模拟退火', '哈密顿通路的证明', '最大流最小割定理'],
-    init: function() {
+    init: function () {
         shuffle(this.stru);
         shuffle(this.cele);
         shuffle(this.prin);
@@ -101,6 +100,6 @@ function set_scheme(scheme = schemes.computer_science) {
     print();
 }
 
-$().ready(function() {
+$().ready(function () {
     new ClipboardJS('#copy');
 })
