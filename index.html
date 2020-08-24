@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh" style="padding-bottom: 50px;">
-
+<html>
 <head>
     <title>满分作文生成器！</title>
     <meta charset="UTF-8">
@@ -31,15 +30,15 @@
     <div class="mdui-appbar">
         <div class="mdui-toolbar">
             <span></span>
-            <a href="javascript:;" class="mdui-typo-title">满分作文生成器</a>
+            <a class="mdui-typo-title">满分作文生成器</a>
             <div class="mdui-toolbar-spacer"></div>
-            <a href="//github.com/BeautyYuYanli/full-mark-composition-generator" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-tooltip="{content:'Source Code'}"><i class="mdui-icon material-icons">code</i></a>
+            <a href="//github.com/BeautyYuYanli/full-mark-composition-generator" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-tooltip="{content:'源代码'}"><i class="mdui-icon material-icons">code</i></a>
         </div>
     </div>
     <div class="mdui-container">
         <br>
         <div>
-            <button onclick="print()" class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple mdui-override-btn">生成满分作文</button>
+            <button onclick="print()" class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple mdui-override-btn">>>点击生成满分作文<<</button>
         </div>
 
         <div class="mdui-panel" mdui-panel>
@@ -50,7 +49,7 @@
                     <div class="mdui-panel-item-title">选用预设方案</div>
                     <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                 </div>
-                <div class="buttons mdui-panel-item-body" style="font-size: 18px;line-height: 25px;"></div>
+                <div id="buttons" class="mdui-panel-item-body" style="font-size: 18px;line-height: 25px;"></div>
             </div>
 
 

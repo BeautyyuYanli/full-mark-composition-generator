@@ -6,7 +6,7 @@ for (let i = 0; i < scheme_list.length; ++i) {
             let tmp = '<button onclick="set_scheme(schemes.name_en)" class="mdui-btn mdui-ripple">name_cn</button>';
             tmp = tmp.replace('name_en', scheme_list[i]);
             tmp = tmp.replace('name_cn', schemes[scheme_list[i]].subj[0]);
-            $('.buttons').append(tmp);
+            $('#buttons').append(tmp);
         });
     });
 }
