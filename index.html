@@ -3,6 +3,7 @@
 
 <head>
     <title>满分作文生成器！</title>
+    <link rel="icon" href="icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- MDUI CSS & JavaScript -->
@@ -27,12 +28,13 @@
     </style>
 </head>
 
-<body>
+<body class="mdui-theme-layout-dark">
     <div class="mdui-appbar">
-        <div class="mdui-toolbar">
+        <div class="mdui-toolbar mdui-color-grey-300">
             <span></span>
             <a class="mdui-typo-title">满分作文生成器</a>
             <div class="mdui-toolbar-spacer"></div>
+            <a href="javascript:sunny();" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-tooltip="{content:'白天模式'}"><i class="mdui-icon material-icons">wb_sunny</i></a>
             <a href="//github.com/BeautyYuYanli/full-mark-composition-generator" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-tooltip="{content:'源代码'}"><i class="mdui-icon material-icons">code</i></a>
         </div>
     </div>
@@ -56,7 +58,7 @@
 
             <div class="mdui-panel-item">
                 <div class="mdui-panel-item-header">
-                    <div class="mdui-panel-item-title">详细编辑</div>
+                    <div class="mdui-panel-item-title">更多编辑</div>
                     <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                 </div>
                 <div class="mdui-panel-item-body">
@@ -69,8 +71,8 @@
                     <div class="mdui-textfield"><input class="mdui-textfield-input subj" placeholder="关联学科1"></div>
                     <div class="mdui-textfield"><input class="mdui-textfield-input subj" placeholder="关联学科2"></div><br>
 
-                    <h4 style="margin-bottom: 0px;">题目：生活在(一种结构)上：</h4>
-                    <div class="mdui-textfield"><input class="mdui-textfield-input stru" placeholder="作文题目：生活在XX上"></div>
+                    <h4 style="margin-bottom: 0px;">题目：生活在[一种结构]上：</h4>
+                    <div class="mdui-textfield"><input class="mdui-textfield-input stru" placeholder="生活在XX上，只填XX"></div>
 
                     <div id="cele">
                         <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">account_circle</i><label class="mdui-textfield-label">名人</label><input class="mdui-textfield-input cele_name" /></div>
@@ -93,12 +95,12 @@
                         <div class="mdui-textfield mdui-col-md-6"><i class="mdui-icon material-icons">message</i><label class="mdui-textfield-label">名言</label><input class="mdui-textfield-input cele_words" /></div>
                     </div>
 
-                    <h4 style="padding-top: 40px;margin-bottom: 5px;">3种思想(主义)：</h4>
+                    <h4 style="padding-top: 40px;margin-bottom: 5px;">3种思想/主义：</h4>
                     <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prin" placeholder="填写一种主义，无需带上“主义”这两个字"></div>
                     <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prin" placeholder="填写一种主义，无需带上“主义”这两个字"></div>
                     <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prin" placeholder="填写一种主义，无需带上“主义”这两个字"></div><br>
 
-                    <h4 style="padding-top: 40px;margin-bottom: 5px;">3个性质（如：延展性）：</h4>
+                    <h4 style="padding-top: 40px;margin-bottom: 5px;">3个性质（如：延展(性)）：</h4>
                     <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prop" placeholder="填写一种性质，无需带上“性”这个字"></div>
                     <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prop" placeholder="填写一种性质，无需带上“性”这个字"></div>
                     <div class="mdui-textfield mdui-col-md-4"><input class="mdui-textfield-input prop" placeholder="填写一种性质，无需带上“性”这个字"></div><br>
@@ -118,6 +120,7 @@
                     </div><br>
                     <div class="mdui-panel-item-actions" style="border-top: 0">
                         <button class="mdui-btn mdui-ripple" onclick="_print()">生成</button>
+                        <button class="mdui-btn mdui-ripple" onclick="_clear()">清空</button>
                         <button class="mdui-btn mdui-ripple" mdui-panel-item-close>收起</button>
                     </div>
                 </div>
@@ -136,8 +139,11 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
+
+
+
 
     </div>
     <script src="main.js"></script>

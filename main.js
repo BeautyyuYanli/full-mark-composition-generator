@@ -1,6 +1,8 @@
 var schemes = {},
     scheme_list = ['computer_science', 'buddhism', 'physics', 'biology', 'ha', 'linguistics', 'literature', 'mathematics', '入关', 'White_Album', 'Touhou_Project', 'music', 'liuxue', 'oi'];
+console.log('请无视出现的两个报错')
 for (let i = 0; i < scheme_list.length; ++i) {
+
     $.getScript('schemes/' + scheme_list[i] + '.js', function() {
         $(document).ready(function() {
             let tmp = '<button onclick="set_scheme(schemes.name_en)" class="mdui-btn mdui-ripple">name_cn</button>';
@@ -107,3 +109,25 @@ function set_scheme(scheme = schemes.computer_science) {
 $().ready(function() {
     new ClipboardJS('#copy');
 })
+
+
+
+function _clear() {
+    $(".stru")[0].value = '';
+    for (let i = 0; i < 3; ++i) {
+        $(".subj")[i].value = '';
+        $(".prin")[i].value = '';
+        $(".prop")[i].value = '';
+    }
+    for (let i = 0; i < 9; ++i) {
+        $(".cele_name")[i].value = '';
+        $(".cele_words")[i].value = '';
+    }
+    for (let i = 0; i < 6; ++i)
+        $(".conc")[i].value = '';
+}
+
+function sunny() {
+    $("body").attr('class', '');
+    $(".mdui-toolbar").attr('class', 'mdui-toolbar');
+}
