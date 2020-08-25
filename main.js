@@ -55,8 +55,10 @@ var tmp_scheme = {
     }
 }
 
-function print(chosen_scheme = tmp_scheme) {
+function _print(chosen_scheme = tmp_scheme) {
     output = tmp.join('<br/><br/>');
+
+    mdui.snackbar({ message: '生成完成' });
 
     chosen_scheme.stru[0] = $(".stru")[0].value;
     for (let i = 0; i < 3; ++i) {
@@ -82,6 +84,7 @@ function print(chosen_scheme = tmp_scheme) {
         this['概念' + i] = chosen_scheme.conc[i - 1];
     }
     $('#output').html(eval('`' + output + '`'));
+
 }
 
 function set_scheme(scheme = schemes.computer_science) {
@@ -98,7 +101,7 @@ function set_scheme(scheme = schemes.computer_science) {
     }
     for (let i = 0; i < 6; ++i)
         $(".conc")[i].value = scheme.conc[i];
-    print();
+    _print();
 }
 
 $().ready(function() {
