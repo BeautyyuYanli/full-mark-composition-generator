@@ -27,3 +27,5 @@ schemes['liuxue'] = {
         shuffle(this.prin);
         shuffle(this.prop);
         shuffle(this.conc);
+    }
+}
