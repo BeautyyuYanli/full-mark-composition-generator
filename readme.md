@@ -28,6 +28,7 @@
 
 - [YunYouJun](https://github.com/YunYouJun): 偷偷摸摸不是君子所为，那我就光明正大地在这放个钓鱼网站 [我很可爱，请给我钱 | give-me-money](https://github.com/YunYouJun/give-me-money) 吧！
 
+- [杜子德](https://www.noi.cn/): 那我也光明正大地在这放个钓鱼网站 [我很CCF，请给我钱 | give-me-money](https://www.noi.cn/) 吧！
 - (广告位招租...(自己发pr吧hhh))
 
 ## meme来源
