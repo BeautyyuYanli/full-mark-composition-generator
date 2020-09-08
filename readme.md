@@ -6,7 +6,7 @@
 
 ## 体验网址
 
-[一键生成满分作文！](http://beautyyu.top/full-mark-composition-generator/)
+[一键生成满分作文！](http://beautyyu.one/full-mark-composition-generator/)
 
 ## Todo
 
