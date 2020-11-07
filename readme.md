@@ -20,6 +20,8 @@
 
 ## Contributors(广告区)
 
+- [cnchar](https://github.com/theajack/cnchar): 好用小巧、功能全面的汉字 js 库(拼音、笔划数、笔划绘制、偏旁、繁简体、多音字词、歇后语、成语、多端支持等等) 快来[体验](https://theajack.gitee.io/cnchar/v2/)吧！
+
 - [beautyyu](https://github.com/BeautyYuYanli): 我很可爱，请给我点star！欢迎关注[我的Telegram Channel](https://t.me/water_water_water_2077)
 
 - [RimoChan](https://github.com/RimoChan): 那我偷偷在这里放个[Librian - 简明强大的Galgame引擎](https://github.com/RimoChan/Librian)的广告……
