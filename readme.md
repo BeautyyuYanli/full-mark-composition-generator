@@ -20,8 +20,6 @@
 
 ## Contributors(广告区)
 
-- [cnchar](https://github.com/theajack/cnchar): 好用小巧、功能全面的汉字 js 库(拼音、笔划数、笔划绘制、偏旁、繁简体、多音字词、歇后语、成语、多端支持等等) 快来[体验](https://theajack.gitee.io/cnchar/v2/)吧！
-
 - [beautyyu](https://github.com/BeautyYuYanli): 我很可爱，请给我点star！欢迎关注[我的Telegram Channel](https://t.me/water_water_water_2077)
 
 - [RimoChan](https://github.com/RimoChan): 那我偷偷在这里放个[Librian - 简明强大的Galgame引擎](https://github.com/RimoChan/Librian)的广告……
@@ -33,6 +31,8 @@
 - [杜子德](https://www.noi.cn/): 那我也光明正大地在这放个钓鱼网站 [我很CCF，请给我钱 | give-me-money](https://www.noi.cn/) 吧！
 
 - [GeorgeZou](https://github.com/georgezouq): 真正的粉丝，就要关注 [Tefact 低代码平台](https://github.com/Tefact/tefact-saas) 无需任何代码，即可生成管理后台！
+
+- [cnchar](https://github.com/theajack/cnchar): 好用小巧、功能全面的汉字 js 库(拼音、笔划数、笔划绘制、偏旁、繁简体、多音字词、歇后语、成语、多端支持等等) 快来[体验](https://theajack.gitee.io/cnchar/v2/)吧！
 
 - (广告位招租...(自己发pr吧hhh))
 
