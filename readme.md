@@ -33,6 +33,8 @@
 - [GeorgeZou](https://github.com/georgezouq): 真正的粉丝，就要关注 [Tefact 低代码平台](https://github.com/Tefact/tefact-saas) 无需任何代码，即可生成管理后台！
 
 - [cnchar](https://github.com/theajack/cnchar): 好用小巧、功能全面的汉字 js 库(拼音、笔划数、笔划绘制、偏旁、繁简体、多音字词、歇后语、成语、多端支持等等) 快来[体验](https://theajack.gitee.io/cnchar/v2/)吧！
+  
+- [小嘿作文生成器](https://github.com/jackjyq/xiaohei-zuowen)：高质量的作文生成器！不信吗？[来试一下](http://zuowen.jackjyq.com/)就知道了。
 
 - (广告位招租...(自己发pr吧hhh))
 
